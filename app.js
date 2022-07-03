@@ -1,6 +1,10 @@
 const express = require('express');
+const path = require('path');
+const port = 3030;
 const app = express();
 
-app.get('/', (req,res) => res.send('levantando servidor!'))
+app.use(express.static('public'));
 
-app.listen(3030,() => console.log('Server running in port 3030'))
+app.get('/', (req,res) => res.sendFile(path.resolve(__dirname, 'views','home.html')));
+
+app.listen(port, () => console.log('Servidor corriendo en http://localhost:' + port));
