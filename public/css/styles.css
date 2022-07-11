@@ -1,0 +1,106 @@
+@import './styles.css';
+
+:root{
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #1259c3;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.home__header{
+background-color: #EAC926;
+}
+
+.home__header__logo{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.home__header__icono-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: #1259c3;
+    border-radius: 15%;
+    margin: 1px 145px 10px 145px;
+}
+
+.home__header__barra {
+    margin-left: 10px;
+}
+
+.home__header__lupa {
+    margin-left: 10px;
+    padding: 1px 1px 10px;
+}
+
+#compra {
+    text-align: center;
+}
+
+.home__header__lista {
+    font-size: 3;
+    padding: 10px 1px 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 12px;    
+}
+
+h3{
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+}
+
+#compra{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    color: #666;
+}
+
+.home__footer__p{
+    padding: 1px 25px 5px 25px;
+}
+
+.home__footer__h5 {
+    font-weight: 700;
+}
+
+
+
+.home__footer .fa-solid {
+    color: #1259c3;
+    font-size: 20px;
+    margin: 7px;
+}
+
+.home__p {
+    color: #666;
+    padding: 25px 1px 10px 10px;
+}
