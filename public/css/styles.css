@@ -23,6 +23,10 @@ background-color: #EAC926;
     padding-top: 20px;
 }
 
+.home__header__logo img{
+    width: 50%;
+}
+
 .home__header__icono-menu {
     display: flex;
     align-items: center;
@@ -43,16 +47,18 @@ background-color: #EAC926;
 
 .home__header__lupa {
     margin-left: 10px;
-    padding: 1px 1px 10px;
+    padding: 2px;
 }
 
 #compra {
+    display: block;
     text-align: center;
 }
 
 .home__header__lista {
     font-size: 3;
     padding: 10px 1px 10px;
+    margin-left: 1%;
 }
 
 body {
@@ -82,11 +88,13 @@ article div{
 }
 .precio {
     font-size: 18px;
+    margin-left: 1%;
 }
 
 .descuento {
     font-size: 16px;
-    color: var(--colorVerde)
+    color: var(--colorVerde);
+    margin-left: 1%;
 }
 
 #compra{
