@@ -34,6 +34,7 @@ background-color: #EAC926;
     background: #1259c3;
     border-radius: 15%;
     margin: 1px 145px 10px 145px;
+    border: none;
 }
 
 .home__header__barra {
@@ -56,22 +57,36 @@ background-color: #EAC926;
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--colorGrisClaro);
 }
 
 p{
-    font-size: 12px;    
+    font-size: 12px;
+    margin: auto;
+    width: 90%;
+    background-color: white;  
 }
 
 h3{
     font-size: 24px;
+    color: var(--colorGrisOscuro);
 }
 
+h4{
+    color: var(--colorGrisOscuro);
+}
+
+article div{
+    padding: 15px;
+    border-top: 1px #ebebeb solid;
+}
 .precio {
     font-size: 18px;
 }
 
 .descuento {
     font-size: 16px;
+    color: var(--colorVerde)
 }
 
 #compra{
@@ -82,6 +97,8 @@ footer{
     text-align: center;
     background-color: white;
     color: #666;
+    margin: auto;
+    width: 90%;
 }
 
 .home__footer__p{
@@ -103,4 +120,20 @@ footer{
 .home__p {
     color: #666;
     padding: 25px 1px 10px 10px;
+}
+
+.fa-truck {
+    border: 1px solid var(--colorVerde);
+    border-radius: 50%;
+    color: var(--colorVerde);
+    padding: 5%;
+    font-size: small;
+}
+
+.main__section__article__h4 {
+    color: var(--colorGrisOscuro);
+}
+
+article div {
+    background-color: white;
 }
