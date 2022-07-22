@@ -1,5 +1,10 @@
 /*769px - MAS*/
 @media (min-width:769px){
+   
+    main section {
+        grid-template-columns: 1fr 1fr 1fr 1fr!important;
+        grid-gap: 10px;
+    } 
 
 }
 /*361px - MAS*/
@@ -7,12 +12,53 @@
     .home__header__icono-menu{
         display: none;
     }
+
+    main section {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
     article{
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
     article div h4{
         display: block;
     }
+
+    .home__header__lista ul li{
+        display: inline-block;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .home__header__lista{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 20%;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .home__header__barra img{
+        width: 30%;
+
+    }
+    .home__header__barra input{
+        height: 22px;
+        width: 80%;
+    }
+
+    .home__header__barra #compra{
+        font-size: 12px;
+    }
+
+    .home__header__barra form{
+    display: flex;
+    justify-content: center;
+    }
+    
+        
+    
 }
 /* 0px - 360px */
 @media (max-width:360px){
@@ -25,4 +71,45 @@
     article div h4{
         display: none;
     }
+
+    main section {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .home__header__barra img{
+        width: 48%;
+        margin-right: 5px;
+
+    }
+    .home__header__barra #compra {
+        width: 100%;
+    }
+    .home__header__barra {
+        display: block;
+    }
+    .home__header__barra form{
+        width: 48%;
+        display: inline-flex;
+        justify-content: center;
+        position: relative;
+        top: -15px;
+    }
+    .home__header__barra form input {
+        width: 75%;
+        border-width: 0px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 10px 0px 10px 10px;
+
+    }
+    .home__header__barra form button{
+        margin-left: -5px;
+        border-width: 0px;
+        background-color: white;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 10px 10px 10px 2px;
+    }
+
+    
 }
