@@ -1,0 +1,143 @@
+@import './register.css';
+
+:root{
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #1259c3;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 600;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 500;
+    margin-left: 10px;
+}
+
+form {
+    background-color: var(--colorGrisClaro);
+    padding: 40px 0px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.form {
+    width: 100%;
+    margin-top: 850px;
+}
+
+form .cuadro {
+    position: relative;
+    margin: 40px;
+    background: var(--colorGrisClaro);
+}
+
+input {
+    background: none;
+    color: var(--colorGrisOscuro);
+    font-size: 18px;
+    padding: 10px 10px 1px 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input:focus{
+    outline: none;
+    color: var(--colorGrisOscuro);
+}
+
+label {
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 40px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+input:focus~label
+input{
+    top: -14px;
+    font-size: 12px;
+    color: black;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background-color: var(--colorGrisOscuro);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before {
+    width: 100%;
+}
+
+.radio {
+    position: relative;
+    margin: 40px;
+    background: var(--colorGrisClaro);
+}
+
+.checkbox {
+    position: relative;
+    margin: 40px;
+    background: var(--colorGrisClaro);
+}
+
+.radio label {
+    top: -1px;
+}
+
+.checkbox label {
+    top: -1px;
+}
+
+.boton {
+    width: 40%;
+    background: var(--colorGrisOscuro);
+    border: none;
+    padding: 12px;
+    color: var(--colorGrisClaro);
+    margin: 16px 0px;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
