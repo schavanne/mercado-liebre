@@ -3,9 +3,25 @@
    
     main section {
         grid-template-columns: 1fr 1fr 1fr 1fr!important;
-        grid-gap: 10px;
-    } 
+        grid-gap: 30px !important;
+    }
 
+    article:hover {
+            box-shadow: 0px 0px 22px rgb(100,100,100);
+    }
+
+    article{
+        box-shadow: 0px 0px 5px rgb(100,100,100);
+    }
+
+    .home__footer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home__footer section:hover .fa-solid {
+        color: #1259c3;
+    }
 }
 /*361px - MAS*/
 @media (min-width:361px){
